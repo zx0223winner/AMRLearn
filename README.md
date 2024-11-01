@@ -122,9 +122,9 @@ Column header explanation:
 3. `coef` location (e.g. 0.1496219910027701)
 <a name="sec5"></a>
 
-### 4. AMR_Learn tutorial
+### 4. AMR_Learn dependencies
 
-4.1 user will need to install respective packages first
+user will need to install respective packages
 > pip3 install -U scikit-learn scipy matplotlib pandas
 
 ```python3
