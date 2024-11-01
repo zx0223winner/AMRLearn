@@ -344,59 +344,7 @@ plt.plot(fpr,tpr,label="support vector machine, AUC="+str(auc))
 plt.legend()
 
 plt.show()
-# reg2 = LinearRegression()
-# reg2.fit(X_train, y_train)
-# y_pred = reg2.predict(X_test)
-# fpr, tpr, _ = metrics.roc_curve(y_test, y_pred)
-# auc = round(metrics.roc_auc_score(y_test, y_pred), 4)
-# plt.plot(fpr,tpr,label="Linear Regression, AUC="+str(auc))
 
-
-# 
-# y_pred_prob = reg2.predict(X_test)
-# fpr, tpr, thresholds = roc_curve(y_test, y_pred_prob)
-# plt.plot([0, 1], [0, 1], 'k--')
-# plt.plot(fpr, tpr, label='Linear Regression')
-# plt.xlabel('False Positive Rate')
-# plt.ylabel('True Positive Rate')
-# plt.title('Linear Regression ROC Curve')
-# plt.show();
-# 
-# y_pred_prob = logreg.predict_proba(X_test)[:,1]
-# print(roc_auc_score(y_test, y_pred_prob))
-# 
-# print("4 multiple ROC performance evaluation\n")
-# #set up plotting area
-# plt.figure(0).clf()
-# 
-# fit support vector machine model and plot ROC curve
-# svc = SVC(probability=True)
-# svc.fit(X_train, y_train)
-# y_pred = svc.predict_proba(X_test)[:, 1]
-# fpr, tpr, _ = metrics.roc_curve(y_test, y_pred)
-# auc = round(metrics.roc_auc_score(y_test, y_pred), 4)
-# plt.plot(fpr,tpr,label="support vector machine, AUC="+str(auc))
-# 
-# #If you are in a regression setting, just replace predict_proba with predict.
-# # If you are in a classification setting, you cannot use linear regression - try logistic regression instead 
-# #fit Linear regression model and plot ROC curve
-# 
-# 
-# reg3 = Ridge(alpha = 0.1, normalize = True)
-# reg3.fit(X_train, y_train)
-# y_pred = reg3.predict(X_test)
-# fpr, tpr, _ = metrics.roc_curve(y_test, y_pred)
-# auc = round(metrics.roc_auc_score(y_test, y_pred), 4)
-# plt.plot(fpr,tpr,label="Linear Regression, AUC="+str(auc))
-# 
-# reg4 = Lasso(alpha=0.1, normalize=True)
-# reg4.fit(X_train, y_train)
-# y_pred = reg4.predict(X_test)
-# fpr, tpr, _ = metrics.roc_curve(y_test, y_pred)
-# auc = round(metrics.roc_auc_score(y_test, y_pred), 4)
-# plt.plot(fpr,tpr,label="Linear Regression, AUC="+str(auc))
-# 
-# 
 # add legend
 # plt.legend()
 
