@@ -1,5 +1,5 @@
 #counting the percentage of non-coding regions
-# only works when the cds starts with 1, otherwise needs to manually correct the first four to five lines of non-coding file
+
 # For example,
 #non_coding_1	region	1	189	189
 #non_coding_2	region	256	337	81
