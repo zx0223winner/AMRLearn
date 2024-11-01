@@ -1,14 +1,14 @@
 # AMR_Learn
 
-### 1. AMRLearn: A machine learning pipeline to characterize antimicrobial resistance associated with SNPs in microbiome
+### 1. AMRLearn: A machine learning pipeline for characterization of antimicrobial resistance determinants in microbiobial genomic data
 
 ### 2. What's AMRLearn?
 
->Explore the genome diversity and specificity of microorganisms to uncover Antimicrobial resistance(AMR) within-host evolution. Focus on a smaller number of samples to explore the potential for high-quality de novo assembly, AMRLearn represents a useful tool for researchers to preliminarily explore the AMR from whole genome sequencing data in microbiome.
+>Single-nucleotide polymorphisms (SNPs) are useful biomarkers for linking genotype to phenotype in a wide variety of biological contexts. In the realm of microbiology, this includes the study of host-pathogen interactions and antimicrobial resistance (AMR), which is one of the greatest threats facing humanity.
 
->A small dataset of simulated data extracted and modified from the public resource (Moradigaravand et al., 2018) were used for the purpose of testing the pipeline only. With more experimental data to be trained from users, the pipeline will have better predictions.
+>However, traditional antimicrobial susceptibility testing (AST) and minimum inhibitory concentration (MIC) experiments are time-consuming and viable only for cultivable bacteria. Machine learning is a potentially powerful and rapid tool for predicting AMR from bacterial genome sequence data.
 
->Based on supervised machine learning algorithms (Linear regression, Ridge regression, Lasso regression, Support Vector Machine(SVM)), five different classification models were used to build and train SNPs.
+>Here we present AMRLearn, a machine learning pipeline to assist users in the prediction and visualization of AMR phenotypes associated with SNP genotypes. We describe the steps needed for input data preparation, prediction model selection and result visualization. AMRLearn is a useful tool for researchers wanting to extract information relevant to AMR from whole genome sequence data.
 
 
 2.1 generate the lcoation info from genbank file
@@ -178,9 +178,9 @@ from sklearn import metrics
 ```
 
 ### 5.Limitation
-There is a steep learning curve for researchers with limited knowledge of bioinformatics, especially those who are not familiar with the basic command lines and dash shell in a Linux/Unix environment. At the present time, a “one-click solution” does not exist because of the desire to retain flexibility in the usage of our scripts for different purposes. That said, our tool is comparatively easier to use at current stage. At present there are very few tools that can execute the machine learning predicting highly similar duplicate gene data. AMRLearn thus fills a need for the bioinformatics and genomics community.
+AMRLearn users can experience a steep learning curve if they are not familiar with the basic command lines and dash shell in a Linux/Unix environment. At present, a “one-click” solution to the bioinformatic protocols employed by AMRLearn does not exist; it is desirable to retain flexibility in the usage of our scripts for different types of input data processing. That said, AMRLearn is comparatively easier to use and install with one of the most popular and well-maintained programming languages – Python as well as the Scikit learn and TensorFlow libraries. At present there are few tools that can characterize the relationship between AMR and SNPs in genomic data via classification and linear machine learning models. AMRLearn thus fills a need for the bioinformatics and genomics community.
 
 ### 6. Reference
-1.Xi Zhang*, Yining Hu. (2024). AMRLearn: A machine learning pipeline to characterize antimicrobial resistance associated with SNPs in microbiome
+1.Zhang X., Hu Y., Cheng Z., Archibald J. (2024). AMRLearn: A machine learning pipeline for characterization of antimicrobial resistance determinants in microbiobial genomic data.
 
 
