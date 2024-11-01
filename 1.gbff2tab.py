@@ -2,7 +2,6 @@
 ##          Step1. extract gene location info from GenBank file            ##          
 ##*************************************************************************##
 
-#Note: might need to manually delete the plasmid genome in case any found in the Genbank file, this is to ascertain a list of gene list from chromosomes
 
 import sys
 if len(sys.argv)!=3: 
