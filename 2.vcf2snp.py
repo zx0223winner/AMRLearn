@@ -38,7 +38,7 @@ for line in np_lines:
 #         my_dict[a] = b +'\t'+c+'\t'+d + '\t' + e
     #while cur_line < len(line1s):
     for line1 in line1s:
-        if line1.startswith('NZ'):
+        if line1.startswith('U'):
             list = line1.split('\t')
             if int(list[1]) > int(d):
                 break
