@@ -35,8 +35,8 @@
 2.4 the main machine learning scripts for linear models
 ```python3
 # 4.AMR_Learn_linear.py
->Usage:python3 4.AMR_Learn_linear.py <output_file_name> <antibiotics name>
-#Example: python3 AMRLearn.py feature2target.txt Spectinomycin
+>Usage:python3 4.AMR_Learn_linear.py <output_file_name> <antibiotics name> <threshold for filtering absolute coefficient>
+#Example: python3 AMRLearn.py feature2target.txt Spectinomycin 0.1
 ```
 
 2.5 the main machine learning scripts for classification models
