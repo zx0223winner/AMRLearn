@@ -42,7 +42,7 @@
 2.5 the main machine learning scripts for classification models
 ```python3
 # 4.6.AMRLearn_classification_LR_KNN_DT_SVM_RF.py
->Usage:python3 6.AMRLearn_classification_LR_KNN_DT_SVM_RF.pyy <output_file_name> <antibiotics name>
+>Usage:python3 6.AMRLearn_classification_LR_KNN_DT_SVM_RF.py <output_file_name> <antibiotics name>
 #Example: python3 6.AMRLearn_classification_LR_KNN_DT_SVM_RF.py feature2target.txt Spectinomycin
 ```
 
