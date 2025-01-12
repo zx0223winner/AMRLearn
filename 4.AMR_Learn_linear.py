@@ -24,7 +24,7 @@ from sklearn import metrics
 
 import sys
 if len(sys.argv)!=3: #if the input arguments not 4, showing the usage.
-    print("Usage:python3 AMR_Learn_linear.py <feature2target.txt> <name of antibiotics>\n\n e.g.,python3 AMR_Learn_linear.py feature2target.txt Spectinomycin \n\n more antibiotics to try: 'Spectinomycin','Lincomycin','Florfenicol','chloramphenicol','Doxycycline','Tigecycline','Cefotaxime','Ceftazidime','Ciprofloxacin','Ofloxacin','Polymyxin_B','Erythromycin','Rifampin','Trimethoprim','amikacin','Tetracycline',")
+    print("Usage:python3 AMR_Learn_linear.py <feature2target.txt> <name of antibiotics> <threshold for filtering absolute coefficient>\n\n e.g.,python3 AMR_Learn_linear.py feature2target.txt Spectinomycin 0.1 \n\n more antibiotics to try: 'Spectinomycin','Lincomycin','Florfenicol','chloramphenicol','Doxycycline','Tigecycline','Cefotaxime','Ceftazidime','Ciprofloxacin','Ofloxacin','Polymyxin_B','Erythromycin','Rifampin','Trimethoprim','amikacin','Tetracycline',")
     sys.exit()
 
 os.system('mkdir '+ sys.argv[2])
@@ -110,7 +110,7 @@ select_names = []
 select_coef = []
 for i in range(len(ridge_coef)):
 # 0.1 is the threshold to view coefficients, users can relax the thresholds to view more.
-    if abs(ridge_coef[i]) > 0.1: 
+    if abs(ridge_coef[i]) > float(sys.argv[3]): 
         select_names.append(names[i])
         select_coef.append(ridge_coef[i])
         outfile.write(str(names[i])+"\t"+str(ridge_coef[i])+"\n")
@@ -131,7 +131,7 @@ lasso_coef = lasso.fit(X, y).coef_
 select_names = []
 select_coef = []
 for i in range(len(lasso_coef)):
-    if abs(lasso_coef[i]) > 0.1:
+    if abs(lasso_coef[i]) > float(sys.argv[3]):
         select_names.append(names[i])
         select_coef.append(lasso_coef[i])
         outfile2.write(str(names[i])+"\t"+str(lasso_coef[i])+"\n")
