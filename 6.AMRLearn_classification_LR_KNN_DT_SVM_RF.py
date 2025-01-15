@@ -344,6 +344,7 @@ plt.plot(fpr,tpr,label="support vector machine, AUC="+str(auc))
 plt.legend()
 
 plt.savefig(sys.argv[2]+".png")
+f.close()
 #plt.show()
 
 # add legend
