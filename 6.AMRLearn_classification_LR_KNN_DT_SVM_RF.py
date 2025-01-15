@@ -343,7 +343,8 @@ plt.plot(fpr,tpr,label="support vector machine, AUC="+str(auc))
 #add legend
 plt.legend()
 
-plt.show()
+plt.savefig(sys.argv[2]+".png")
+#plt.show()
 
 # add legend
 # plt.legend()
