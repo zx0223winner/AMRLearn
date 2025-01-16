@@ -10,8 +10,35 @@
 
 >Here we present AMRLearn, a machine learning pipeline to assist users in the prediction and visualization of AMR phenotypes associated with SNP genotypes. We describe the steps needed for input data preparation, prediction model selection and result visualization. AMRLearn is a useful tool for researchers wanting to extract information relevant to AMR from whole genome sequence data.
 
+2.1 Computational Requirement
 
-2.1 generate the lcoation info from genbank file
+AMRLearn users can either follow the Star Protocol pipeline to install the required packages or use the Conda environment file to deploy the pipeline.
+
+Create an environment from Conda YAML file
+To install all required dependencies, we provided conda environment definition file (tested on the Ubuntu 20.04 LTS system) with all the dependencies. 
+```bash
+#You need to have the Conda to be installed on your system. For example, to install Anaconda distribution on Linux, users can follow the link to download the package.
+#Run the following command to create an environemnt from Conda YAML file
+source ~/.bashrc
+conda env create --file AMRLearn_ML.yaml
+conda env create --file AMRLearn_DL.yaml
+
+#After downloading a long list of required dependencies. Activate the Conda environemnt and follow the pipeline to run respective packages/custom scripts.
+
+# To activate the machine learning scripts environment, use  
+$ conda activate AMRLearn_ML
+# To deactivate an active environment, use
+$ conda deactivate
+
+# To activate the deep learning script environment, use  
+$ conda activate AMRLearn_DL
+# To deactivate an active environment, use
+$ conda deactivate
+
+```
+
+
+2.2 generate the lcoation info from genbank file
 ```python3
 
 # must clean the plasmid before running the genbank file.
@@ -20,26 +47,26 @@
 #Example: python3 1.gbff2tab.py GCA_000005845.2.gbff gene_location_info.txt")
 ```
 
-2.2 generate snps count table from Parsnp result
+2.3 generate snps count table from Parsnp result
 ```python3
 # 2.vcf2snp.py
 >Usage:python3 2.vcf2snp.py <gene location info> <parsnp vcf file> <output file>
 #Example: python3 2.vcf2snp.py gene_location_info.txt parsnp.ggr.vcf vcf_snp_count.txt
 ```
 
-2.3 generate the table for the regression coffeficents
+2.4 generate the table for the regression coffeficents
 ```python3
 # 3.feature2target.py
 >Usage:python3 3.feature2target.py vcf_snp_count.txt Antibiotics_test.txt feature2target.txt
 ```
-2.4 the main machine learning scripts for linear models
+2.5 the main machine learning scripts for linear models
 ```python3
 # 4.AMR_Learn_linear.py
 >Usage:python3 4.AMR_Learn_linear.py <output_file_name> <antibiotics name> <threshold for filtering absolute coefficient>
 #Example: python3 AMRLearn.py feature2target.txt Spectinomycin 0.1
 ```
 
-2.5 the main machine learning scripts for classification models
+2.6 the main machine learning scripts for classification models
 ```python3
 # 4.6.AMRLearn_classification_LR_KNN_DT_SVM_RF.py
 >Usage:python3 6.AMRLearn_classification_LR_KNN_DT_SVM_RF.py <output_file_name> <antibiotics name>
