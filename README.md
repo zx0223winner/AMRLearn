@@ -1,6 +1,6 @@
 # AMR_Learn
 
-### 1. AMRLearn: A machine learning pipeline for characterization of antimicrobial resistance determinants in microbiobial genomic data
+### 1. AMRLearn: A machine learning pipeline for characterization of antimicrobial resistance determinants in microbial genomic data
 
 ### 2. What's AMRLearn?
 
