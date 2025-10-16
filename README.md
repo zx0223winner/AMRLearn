@@ -209,6 +209,4 @@ from sklearn import metrics
 AMRLearn users can experience a steep learning curve if they are not familiar with the basic command lines and dash shell in a Linux/Unix environment. At present, a “one-click” solution to the bioinformatic protocols employed by AMRLearn does not exist; it is desirable to retain flexibility in the usage of our scripts for different types of input data processing. That said, AMRLearn is comparatively easier to use and install with one of the most popular and well-maintained programming languages – Python as well as the Scikit learn and TensorFlow libraries. At present there are few tools that can characterize the relationship between AMR and SNPs in genomic data via classification and linear machine learning models. AMRLearn thus fills a need for the bioinformatics and genomics community.
 
 ### 6. Reference
-1.Zhang X., Hu Y., Cheng Z., Archibald J. (2024). AMRLearn: A machine learning pipeline for characterization of antimicrobial resistance determinants in microbial genomic data.
-
-
+1.Zhang, Xi, Yining Hu, Zhenyu Cheng, and John M. Archibald. "AMRLearn: Protocol for a machine learning pipeline for characterization of antimicrobial resistance determinants in microbial genomic data." STAR protocols 6, no. 2 (2025): 103733.https://doi.org/10.1016/j.xpro.2025.103733
