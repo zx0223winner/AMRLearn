@@ -1,3 +1,6 @@
+[![License](https://img.shields.io/badge/licence-GPLv3-blue)](https://www.gnu.org/licenses/old-licenses/gpl-3.0)
+![any_text-you_like-blue](https://img.shields.io/badge/Repo_download-512-green)
+
 # AMR_Learn
 
 ### 1. AMRLearn: A machine learning pipeline for characterization of antimicrobial resistance determinants in microbial genomic data
