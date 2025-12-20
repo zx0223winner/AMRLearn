@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="logo_AMRLearn.png" alt="Description" width="600" />
+</p>
+
 [![License](https://img.shields.io/badge/licence-GPLv3-blue)](https://www.gnu.org/licenses/old-licenses/gpl-3.0)
 ![any_text-you_like-blue](https://img.shields.io/badge/Repo_download-512-green)
 
@@ -207,6 +211,8 @@ from sklearn.metrics import roc_auc_score
 from sklearn import metrics
 
 ```
+### Declaration of generative AI and AI-assisted technologies 
+GitHub tool logo generation. Author reviewed and edited the content as needed and takes full responsibility for the content.
 
 ### 5.Limitation
 AMRLearn users can experience a steep learning curve if they are not familiar with the basic command lines and dash shell in a Linux/Unix environment. At present, a “one-click” solution to the bioinformatic protocols employed by AMRLearn does not exist; it is desirable to retain flexibility in the usage of our scripts for different types of input data processing. That said, AMRLearn is comparatively easier to use and install with one of the most popular and well-maintained programming languages – Python as well as the Scikit learn and TensorFlow libraries. At present there are few tools that can characterize the relationship between AMR and SNPs in genomic data via classification and linear machine learning models. AMRLearn thus fills a need for the bioinformatics and genomics community.
